@@ -4,9 +4,9 @@ function Switch() {
     
   return (<>
         <div className='Switch bg-red-300 h-screen flex justify-center items-center'>
-            {/* <label htmlFor='toggle'>
+             <label htmlFor='toggle'>
             <input type="checkbox" id="toggle" className='cursor-pointer h-32 w-64 rounded-full appearance-none bg-white border-2 border-black checked:bg-gray:600 transition duration-200' />
-            </label> */}
+            </label> 
         </div>
 </>
   );
