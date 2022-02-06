@@ -1,5 +1,5 @@
 import PostDetails from "./PostDetails";
-import Switch from "./Switch";
+
 // document.getElementById("show").addEventListener('Click',chngdisplay);
 export default function postMessage()
 {
@@ -9,7 +9,7 @@ export default function postMessage()
         
 
         <div className="col-span-4">        
-            <Switch/>
+           <div className="bg-gray-300 h-screen"></div>
        </div>
        
         <div className="col-span-2">

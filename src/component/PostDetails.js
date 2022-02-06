@@ -1,4 +1,5 @@
 import '../css/PostDetails.css';
+import '../css/Switch.css';
 import {useState} from 'react';
 
 export default function PostDetails(){
@@ -36,16 +37,15 @@ export default function PostDetails(){
             <div className="hidden mt-2" id="postinfo">
             <label className='text-sm'>Image</label>
                       
-                        <div className="flex justify-center">
-                            <div className="form-check form-switch">
-                                <input className="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-white bg-no-repeat bg-contain bg-gray-00 focus:outline-none cursor-pointer shadow-sm" type="checkbox" value={flag} role="switch" id="flexSwitchCheckDefault" onChange={chkflag}/>
-                               
-                            </div>    
-                        </div>  
+            <div className='Switch  flex justify-center items-center'>
+             <label htmlFor='toggle-switch'>
+            <input type="checkbox" id="toggle-switch" className='cursor-pointer h-8 w-16 rounded-full appearance-none bg-white bg-opacity-5 border-2 border-teal-600 checked:bg-gray-300 transition duration-200 realtive '  value={flag} onChange={chkflag}/>
+            </label> 
+        </div>
                     <label className='text-sm'>Text</label>
                 <form action=""  >      
                     
-                   
+                {/*   */}
                     <br/>
                    
                     <label>{opt}</label> 

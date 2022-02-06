@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind component;
+@tailwind utilities;
+
+#toggle-switch::after{
+    content:'';
+    @apply h-8 w-8 rounded-full bg-teal-600 absolute transform scale-110 transition duration-200;
+}
+#toggle-switch:checked::after{
+    @apply transform scale-110 translate-x-8;
+}
