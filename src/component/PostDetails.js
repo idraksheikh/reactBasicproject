@@ -5,7 +5,7 @@ import {useState} from 'react';
 export default function PostDetails(){
     const [flag,setFlag]=useState(0);
     const [opt,setOpt]=useState("Image");
-  
+    
     
     // console.log(text);
     const chngdisplay=()=>{   
@@ -28,8 +28,8 @@ export default function PostDetails(){
     return(<>
         <div className="text-sm text-center text-emerald-700 pt-2 h-screen bg-white  border-2 border-gray-600 border-y-0">
         <div className='border-b-2 border-gray-600 pb-2'>
-        <span className='mt-24'>Click To Post</span> 
-        <button id="show" onClick={chngdisplay} className=" text-sm ml-8  border-2 border-emerald-700 rounded-sm h-6 w-24 text-black  cursor-pointer bg-purple-100 bg-gradient-to-l from-gray-400 hover:text-black hover:bg-white hover:from-white hover:border-black" value="post">POST</button> 
+        <span className='mt-24 text-black'>Click To Post</span> 
+        <button id="show" onClick={chngdisplay} className=" text-sm ml-8  border-2  rounded-sm h-6 w-24 text-black border-black cursor-pointer bg-purple-100 bg-gradient-to-l from-gray-400 hover:text-black hover:bg-white hover:from-white hover:border-emerald-700" value="post">POST</button> 
         </div>
 
             <div className="hidden mt-2" id="postinfo">
