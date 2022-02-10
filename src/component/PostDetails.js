@@ -20,9 +20,13 @@ export default function PostDetails(){
         
         }
         if(flag===0){
+            document.getElementById("frm1").style.display='block';
+            document.getElementById("frm2").style.display='none';
             setOpt("Text");
         }
         else{
+            document.getElementById("frm1").style.display='none';
+            document.getElementById("frm2").style.display='block';
             setOpt("Image");
         }
         
@@ -36,20 +40,31 @@ export default function PostDetails(){
 
             <div className="hidden mt-2" id="postinfo">
             <label className='text-sm'>Image</label>
-                      
-            <div className='Switch  flex justify-center items-center'>
-             <label htmlFor='toggle-switch'>
-            <input type="checkbox" id="toggle-switch" className='cursor-pointer h-8 w-16 rounded-full appearance-none bg-white bg-opacity-5 border-2 border-teal-600 checked:bg-gray-300 transition duration-200 realtive '  value={flag} onChange={chkflag}/>
-            </label> 
-        </div>
-                    <label className='text-sm'>Text</label>
-                <form action=""  >      
-                    
-                {/*   */}
-                    <br/>
-                   
-                    <label>{opt}</label> 
-                </form>
+                    <div className='Switch  flex justify-center items-center'>
+                        <label htmlFor='toggle-switch'>
+                        <input type="checkbox" id="toggle-switch" className='cursor-pointer h-8 w-16 rounded-full appearance-none bg-white bg-opacity-5 border-2 border-teal-600 checked:bg-gray-300 transition duration-200 realtive '  value={flag} onChange={chkflag}/>
+                        </label> 
+                    </div>
+            <label className='text-sm'>Text</label>
+
+
+            <form  className='hidden text-left' action="" id='frm1' >  
+                <label className='text-sm'>User Name</label>    
+                <input className='mt-5 ml-5 border-2 border-gray-600' type='text' value='' /><br/>
+                <label className='text-sm'>Post</label>    
+                <textarea className='mt-5 ml-16 border-2 border-gray-600 align-middle' value='' >
+
+                </textarea><br/>
+            </form>
+            <form  className=' text-left' action="" id='frm2' >  
+                <label className='text-sm'>User Name</label>    
+                <input className='mt-5 ml-5 border-2 border-gray-600' type='text' value='' /><br/>
+                <label className='text-sm'>Post Image</label>    
+                <textarea className='mt-5 ml-5 border-2 border-gray-600 align-middle' value='' >
+
+                </textarea><br/>
+            </form>
+                <br/><label>{opt}</label> 
         </div>
         </div>
         </>
