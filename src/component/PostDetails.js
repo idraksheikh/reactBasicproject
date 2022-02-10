@@ -44,9 +44,9 @@ export default function PostDetails(){
 
             <form  className='hidden text-left' action="" id='frm1' >  
                 <label className='text-sm'>User Name</label>    
-                <input className='mt-5 ml-5 border-2 border-gray-600' type='text' value='' /><br/>
+                <input className='mt-5 ml-4 border-2 border-gray-600' type='text' value='' /><br/>
                 <label className='text-sm'>Post</label>    
-                <textarea className='mt-5 ml-16 border-2 border-gray-600 align-middle' value='' >
+                <textarea className='mt-5 ml-14 border-2 border-gray-600 align-middle' value='' >
 
                 </textarea><br/>
             </form>
