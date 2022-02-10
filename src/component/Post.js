@@ -5,11 +5,11 @@ export default function postMessage()
 {
     
     return (<>
-        <div className="grid grid-cols-6 auto-cols-max gap-1">
+        <div className="grid grid-cols-6 auto-cols-max gap-0">
         
 
         <div className="col-span-4">        
-           <div className="bg-gray-300 h-screen"></div>
+           <div className="bg-white  border-2 border-gray-600 border-y-0 border-r-0 h-screen"></div>
        </div>
        
         <div className="col-span-2">

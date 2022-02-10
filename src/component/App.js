@@ -1,6 +1,6 @@
 
 import '../css/App.css';
-import Banner from './Banner';
+
 import Post from './Post';
 import Header from './Header';
 import Footer from './Footer';
@@ -15,7 +15,7 @@ function App() {
   return (<>
       <Router>
       <Header />   
-      <Banner />  
+      
       
         <Routes>
           <Route  exact path="/" element={<Post />} />
@@ -24,7 +24,7 @@ function App() {
         </Routes>
       </Router>  
       
-      <Banner /> 
+      
       <Footer />  
     </>
   );
