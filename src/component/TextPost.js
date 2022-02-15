@@ -7,10 +7,10 @@ export default function TextPost(){
     const   ChangeForText=(event)=>{
 
         const {name , value} = event.target;
-        setFormInfo1((oldArray)=>{            
+            setFormInfo1((oldArray)=>{            
 
             return{...oldArray,
-                id:new Date().getTime(),
+                id:new Date().getUTCDate(),
                 [name]:value,                
             }
         });
@@ -22,7 +22,7 @@ export default function TextPost(){
             let arrobj=[];
             if(objOld!=null){
                 arrobj=[...objOld,formInfo1]
-                console.log(arrobj);
+                
             }
             else{
                 arrobj=[formInfo1];
