@@ -1,11 +1,12 @@
 import '../css/PostDetails.css';
 import '../css/Switch.css';
 import {useState} from 'react';
-
+import TextPost from './TextPost';
+import ImagePost from './ImagePost';
 export default function PostDetails(){
     const [flag,setFlag]=useState(0);
     const [opt,setOpt]=useState("Image");
-    
+   
     
     // console.log(text);
     const chngdisplay=()=>{   
@@ -24,7 +25,9 @@ export default function PostDetails(){
             document.getElementById("frm2").style.display='block';
             setOpt("Image");
         }
-    };   
+    }; 
+   
+   
     return(<>
         <div className="text-sm text-center text-emerald-700 pt-2 h-screen bg-white  border-2 border-gray-600 border-y-0">
         <div className='border-b-2 border-gray-600 pb-2'>
@@ -41,23 +44,12 @@ export default function PostDetails(){
                     </div>
             <label className='text-sm'>Text</label>
 
-
-            <form  className='hidden text-left' action="" id='frm1' >  
-                <label className='text-sm'>User Name</label>    
-                <input className='mt-5 ml-4 border-2 border-gray-600' type='text' value='' /><br/>
-                <label className='text-sm'>Post</label>    
-                <textarea className='mt-5 ml-14 border-2 border-gray-600 align-middle' value='' >
-
-                </textarea><br/>
-            </form>
-            <form  className=' text-left' action="" id='frm2' >  
-                <label className='text-sm'>User Name</label>    
-                <input className='mt-5 ml-3 h-7 w-44 border-2 border-gray-600' type='text' value='' /><br/>
-                <label className='text-sm'>Post Image</label>    
-                <input className='mt-5 ml-3 h-7 w-44 border-2 border-gray-600 ' type='file' value='' title='Upload Image' />
-
-                <br/>
-            </form>
+            <div className='hidden' id='frm1'> 
+                <TextPost/>
+            </div>
+            <div className='' id='frm2'> 
+                <ImagePost/>
+            </div>
                 <br/><label>{opt}</label> 
         </div>
         </div>
