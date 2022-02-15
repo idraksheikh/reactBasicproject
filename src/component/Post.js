@@ -9,7 +9,9 @@ export default function postMessage()
         
 
         <div className="col-span-4">        
-           <div className="bg-white  border-2 border-gray-600 border-y-0 border-r-0 h-screen"></div>
+           <div className="bg-white  border-2 border-gray-600 border-y-0 border-r-0 h-screen">
+               
+           </div>
        </div>
        
         <div className="col-span-2">
